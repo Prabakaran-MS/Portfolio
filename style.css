@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex: 30%;
+}
+
+.col-2 {
+    flex: 70%;
+}
+
+.card {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.title * {
+    margin: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+.icon-align {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon-align img {
+    margin-right: 10px;
+}
+
+.skills,
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill,
+.language {
+    background-color: #007acc;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project {
+    margin-top: 20px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.project-details {
+    margin-left: 30px;
+}
+
+.education-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.education h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.language p {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width:320px) {
+    .col-1,
+    .col-2 {
+        flex: 100%;
+    }
+}
